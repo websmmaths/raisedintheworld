@@ -1,0 +1,26 @@
+# OS junk
+.DS_Store
+Thumbs.db
+Desktop.ini
+
+# Editor swap files
+*~
+*.swp
+*.swo
+
+# Secrets and credentials
+.env
+.env.*
+!.env.example
+*.pem
+*.key
+id_rsa
+id_ed25519
+credentials.json
+**/credentials*.json
+
+# Local tooling (not needed for the published site)
+node_modules/
+.venv/
+venv/
+__pycache__/
