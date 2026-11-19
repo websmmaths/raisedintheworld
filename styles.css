@@ -8,6 +8,7 @@
   --bronze-deep: #865e42;
   --line: rgba(90, 70, 50, 0.12);
   --serif: "Fraunces", "Iowan Old Style", Palatino, serif;
+  --heading: "Playfair Display", "Fraunces", "Iowan Old Style", Palatino, serif;
   --sans: "Outfit", "Avenir Next", "Segoe UI", sans-serif;
   --wrap: 1080px;
   --shadow: 0 14px 40px rgba(90, 62, 40, 0.06);
@@ -50,7 +51,7 @@ a { color: inherit; }
 
 .accent {
   display: block;
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-style: italic;
   font-weight: 480;
   font-size: clamp(2.7rem, 5.4vw, 4.35rem);
@@ -155,7 +156,7 @@ button.btn:disabled {
 .resources h2,
 .about h2 {
   margin: 0;
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-weight: 560;
   letter-spacing: -0.03em;
   color: var(--ink);
@@ -206,7 +207,7 @@ button.btn:disabled {
 
 .card h2 {
   margin: 0 0 0.55rem;
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-weight: 520;
   font-size: 1.45rem;
   letter-spacing: -0.02em;
@@ -281,7 +282,7 @@ button.btn:disabled {
 }
 
 .resource-name {
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-size: 1.6rem;
   font-weight: 520;
   line-height: 1.15;
@@ -347,7 +348,7 @@ button.btn:disabled {
 }
 
 .trip-name {
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-size: 1.28rem;
   font-weight: 520;
   line-height: 1.2;
@@ -458,7 +459,7 @@ button.btn:disabled {
 .tagline {
   margin: 0.35rem 0 1rem;
   color: var(--bronze);
-  font-family: var(--serif);
+  font-family: var(--heading);
   font-style: italic;
   font-size: 1.15rem;
 }
