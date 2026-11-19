@@ -229,21 +229,57 @@ button.btn:disabled {
   font-weight: 360;
 }
 
-.signup {
+.trip-list {
   margin: 1.85rem auto 0;
   max-width: 520px;
   background: var(--band);
   border-radius: 20px;
-  padding: 2rem 1.75rem 1.35rem;
+  padding: 0.8rem;
   text-align: left;
+  display: grid;
+  gap: 0.65rem;
 }
 
-.fine {
-  margin: 0.95rem 0 0;
-  color: #8a8178;
-  font-size: 0.78rem;
-  line-height: 1.45;
-  font-weight: 360;
+.trip-item {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: center;
+  gap: 0.25rem 1rem;
+  padding: 1.05rem 1.2rem;
+  border-radius: 14px;
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.trip-item:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.trip-date {
+  color: var(--bronze);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.trip-name {
+  font-family: var(--serif);
+  font-size: 1.28rem;
+  font-weight: 520;
+  line-height: 1.2;
+}
+
+.trip-action {
+  grid-column: 2;
+  grid-row: 1 / span 2;
+  color: var(--bronze-deep);
+  font-size: 0.82rem;
+  font-weight: 500;
+  white-space: nowrap;
 }
 
 .about {
@@ -401,7 +437,11 @@ button.btn:disabled {
   .features,
   .soon { padding-block: 3.25rem; }
 
-  .signup { padding: 1.5rem 1.2rem 1.15rem; }
+  .trip-item { padding: 0.95rem 1rem; }
+
+  .trip-name { font-size: 1.12rem; }
+
+  .trip-action { font-size: 0.75rem; }
 
   .text-links {
     flex-direction: column;
