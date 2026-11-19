@@ -414,6 +414,17 @@ button.btn:disabled {
   text-underline-offset: 0.22em;
 }
 
+.text-links a.btn {
+  color: var(--bronze-deep);
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.text-links a.btn-newsletter:hover {
+  background: var(--bronze);
+  color: #fff;
+}
+
 .text-links a:hover { color: var(--ink); }
 
 .family {
