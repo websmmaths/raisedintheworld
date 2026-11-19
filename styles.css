@@ -78,6 +78,17 @@ a { color: inherit; }
 
 .btn:hover { background: var(--bronze-deep); }
 
+.btn-newsletter {
+  border: 1px solid var(--bronze);
+  background: transparent;
+  color: var(--bronze-deep);
+}
+
+.btn-newsletter:hover {
+  background: var(--bronze);
+  color: #fff;
+}
+
 button.btn {
   border: 0;
   font-family: inherit;
@@ -141,6 +152,7 @@ button.btn:disabled {
 
 .hero h1,
 .soon h2,
+.resources h2,
 .about h2 {
   margin: 0;
   font-family: var(--serif);
@@ -218,6 +230,74 @@ button.btn:disabled {
 .soon h2 {
   font-size: clamp(2.8rem, 5.5vw, 4.15rem);
   line-height: 1.02;
+}
+
+.resources {
+  background: var(--band);
+  padding: 4.5rem 0;
+  text-align: center;
+}
+
+.resources h2 {
+  font-size: clamp(2.8rem, 5.5vw, 4.15rem);
+  line-height: 1.02;
+}
+
+.resources-inner { max-width: 980px; }
+
+.resource-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 1.1rem;
+  margin-top: 1.85rem;
+  text-align: left;
+}
+
+.resource-card {
+  display: grid;
+  align-content: start;
+  gap: 0.55rem;
+  min-height: 230px;
+  padding: 1.55rem 1.6rem;
+  border-radius: 18px;
+  background: var(--card);
+  color: var(--ink);
+  text-decoration: none;
+  box-shadow: var(--shadow);
+  transition: transform 0.15s ease, box-shadow 0.15s ease;
+}
+
+.resource-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 18px 42px rgba(90, 62, 40, 0.1);
+}
+
+.resource-type {
+  color: var(--bronze);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.13em;
+  text-transform: uppercase;
+}
+
+.resource-name {
+  font-family: var(--serif);
+  font-size: 1.6rem;
+  font-weight: 520;
+  line-height: 1.15;
+}
+
+.resource-description {
+  color: var(--muted);
+  font-size: 0.96rem;
+}
+
+.resource-action {
+  align-self: end;
+  margin-top: 0.25rem;
+  color: var(--bronze-deep);
+  font-size: 0.86rem;
+  font-weight: 500;
 }
 
 .soon .accent { margin-top: 0.08em; }
@@ -415,6 +495,7 @@ button.btn:disabled {
   html { scroll-padding-top: 12rem; }
 
   .feature-grid,
+  .resource-grid,
   .about-grid { grid-template-columns: 1fr; }
 
   .family { max-width: 520px; }
@@ -435,7 +516,8 @@ button.btn:disabled {
   .hero { padding: 3.25rem 0 3.5rem; }
 
   .features,
-  .soon { padding-block: 3.25rem; }
+  .soon,
+  .resources { padding-block: 3.25rem; }
 
   .trip-item { padding: 0.95rem 1rem; }
 
